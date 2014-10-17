@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Modern No. 20";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Modern No. 20"), url("MOD20.woff") format("woff");
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+body {
+  background-color: #4d0e32;
+}
+.container {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 80vh;
+}
+.text-container {
+  width: fit-content;
+  margin: auto;
+  color: #6e214d;
+  font-family: "Modern No. 20";
+}
+.header {
+  margin-top: 53vh;
+  font-weight: 900;
+  font-size: 5em;
+}
+.email {
+  text-align: left;
+  font-weight: 600;
+  font-size: 2em;
+  color: #b15f8f;
+  text-decoration: underline;
+}
+@media (min-width: 900px) {
+  .header {
+    font-size: 7em;
+  }
+}
+a.naked,
+a.naked:link,
+a.naked:visited,
+a.naked:hover,
+a.naked:active {
+  color: inherit !important;
+  text-decoration: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+::selection {
+  background: #d2f62a;
+}
+::-moz-selection {
+  background: #d2f62a;
+}
